@@ -1,0 +1,221 @@
+:root{
+
+    --main:#4f84a8;
+    --sub:#74aecd;
+    --light:#dff4ff;
+}
+
+body{
+    margin:0;
+    padding:40px;
+
+    background:var(--light);
+    font-family:
+        "Zen Maru Gothic", sans-serif;
+    color:#222;
+    letter-spacing: 0.05em;
+    line-height: 1.9;
+
+
+    background-color:var(--light);
+
+    background-image:
+        linear-gradient(90deg,
+            rgba(255,255,255,.55) 50%,
+            transparent 50%),
+        linear-gradient(
+            rgba(255,255,255,.55) 50%,
+            transparent 50%);
+
+    background-size:40px 40px;
+
+    background-position:0 0,20px 20px;
+}
+
+.card{
+
+    max-width:720px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.06),
+    0 2px 6px rgba(0,0,0,.04);
+}
+
+
+
+h1{
+
+    font-weight:700;
+
+    margin-top:0;
+
+    font-size:2.5rem;
+
+    color:var(--main);
+}
+
+.subtitle{
+    margin-top:-10px;
+    color:var(--sub);
+    font-size:1.05rem;
+    font-weight:500;
+    letter-spacing:0.08em;
+}
+
+
+
+h2{
+
+    font-weight:600;
+    margin-top:40px;
+
+    padding-bottom:6px;
+
+    border-bottom:2px dashed #b7dff5;
+
+    color:#36779d;
+}
+
+a{
+
+    color:#2880c8;
+
+    text-decoration:none;
+
+    transition:.2s;
+}
+
+a:hover{
+
+    color:#0c5d9d;
+
+    text-decoration:underline;
+}
+
+s{
+
+    color:#888;
+}
+
+::selection{
+
+    background:#bde9ff;
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    margin-top:30px;
+
+    margin-bottom:30px;
+}
+
+.icon{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #d9f3ff;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    flex-shrink:0;
+
+
+    transition:0.2s;
+}
+
+.icon:hover{
+    transform:scale(1.05) rotate(-3deg);
+}
+
+.links{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    background:#e6f8ff;
+
+    border:2px solid #b7dff5;
+
+    border-radius:16px;
+
+    color:#356b88;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.2s;
+}
+
+.button:hover{
+
+    background:white;
+
+    border-color:#83c9ef;
+
+    transform:translateY(-3px);
+}
+
+.hero{
+
+    background:linear-gradient(
+        180deg,
+        #d8f4ff 0%,
+        #eefbff 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(120,190,230,.25);
+
+
+        padding:35px 40px;
+
+    margin:-40px -40px 35px;
+
+    border-radius:24px 24px 0 0;
+}
+.hero::after{
+
+    content:"☁ ☁ ☁";
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:10px;
+
+    opacity:.35;
+
+    font-size:24px;
+}
